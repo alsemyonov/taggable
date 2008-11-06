@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
     README Rakefile MIT-LICENSE init.rb CHANGELOG
     generators/tags/tags_generator.rb generators/tags/USAGE
     generators/tags/templates/tag.rb generators/tags/templates/tagging.rb generators/tags/templates/tags_helper.rb generators/tags/templates/migration.rb
-    lib/acts_as_taggable.rb lib/tag_list.rb
+    lib/taggable.rb lib/tag_list.rb
   )
 
   s.test_files = %w(
