@@ -1,4 +1,4 @@
-class ActsAsTaggableMigrationGenerator < Rails::Generator::Base 
+class TagsGenerator < Rails::Generator::Base 
   def manifest 
     record do |m| 
       m.migration_template 'migration.rb', 'db/migrate'
