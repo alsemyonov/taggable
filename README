@@ -1,27 +1,24 @@
-= acts_as_taggable_on_steroids
+= Taggable gem
 
-If you find this plugin useful, please consider a donation to show your support!
-
-  http://www.paypal.com/cgi-bin/webscr?cmd=_send-money
-  
-  Email address: jonathan.viney@gmail.com
-  
 == Instructions
 
-This plugin is based on acts_as_taggable by DHH but includes extras
+This gem is based on acts_as_taggable_on_steroids by Jonathan Viney but includes extras
 such as tests, smarter tag assignment, and tag cloud calculations.
 
 == Installation
 
-  ruby script/plugin install http://svn.viney.net.nz/things/rails/plugins/acts_as_taggable_on_steroids
+  sudo gem install rotuka-taggable --source=http://gems.github.com
 
 == Usage
+
+In  environment.rb add dependencie
+  config.gem 'rotuka-taggable', :lib => 'taggable'
 
 === Prepare database
 
 Generate and apply the migration:
 
-  ruby script/generate acts_as_taggable_migration
+  ruby script/generate tags
   rake db:migrate
 
 === Basic tagging
@@ -145,4 +142,5 @@ used to tag any objects. Defaults to false.
 
 === Other
 
-Problems, comments, and suggestions all welcome. jonathan.viney@gmail.com  
+Problems, comments, and suggestions all welcome. 
+me@rotuka.com

@@ -6,6 +6,7 @@ module ActiveRecord #:nodoc:
       end
       
       module ClassMethods
+        # Macro that adds tags and taggings for object
         def acts_as_taggable
           has_many :taggings, :as => :taggable, :dependent => :destroy, :include => :tag
           has_many :tags, :through => :taggings
