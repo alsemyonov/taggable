@@ -3,7 +3,7 @@ class TagsGenerator < Rails::Generator::Base
     record do |m| 
       m.migration_template 'migration.rb', 'db/migrate'
       m.file "tag.rb", "app/models/tag.rb"
-      m.file "taging.rb", "app/models/tagging.rb"
+      m.file "tagging.rb", "app/models/tagging.rb"
       m.file "tags_helper.rb", "app/helpers/tags_helper.rb"
     end 
   end
